@@ -1,0 +1,97 @@
+.deals-section {
+  padding: 60px 20px;
+  background: url('/images/mission1.jpeg') no-repeat center center;
+  background-size: cover;
+  color: #333;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.dealsheading {
+  font-size: 5rem;
+  margin-bottom: 40px;
+  background-color: #333;
+  color: #ffd700;
+  border-radius: 10px;
+}
+
+.deals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.deal-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 4px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(25% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deal-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.deal-item p {
+  font-size: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.deal-item .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.order-now {
+  background-color: #333; 
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-now:hover {
+  color: #ffd700; 
+}
+
+@media screen and (max-width: 768px) {
+  .dealsheading {
+      font-size: 3rem;
+  }
+  .deal-item {
+      width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dealsheading {
+      font-size: 2rem;
+  }
+  .deal-item {
+      width: calc(100% - 20px);
+  }
+}

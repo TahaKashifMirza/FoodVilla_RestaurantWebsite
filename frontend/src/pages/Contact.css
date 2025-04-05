@@ -1,0 +1,159 @@
+/* Grid styles */
+.section-contact {
+  background-image: url('/images/contactbackground.jpeg');
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1s ease; 
+  padding: 20px; 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; 
+  align-items: center; 
+}
+
+.contact-img {
+  padding-top: 50px;
+  padding-left: 40px;
+  animation: slideIn 1s ease;
+  text-align: center;
+}
+
+.book-table-heading {
+  text-align: center;
+  background-color: #ffd700;
+  color: #333; 
+  font-size: 20px; 
+  margin-bottom: 20px;
+}
+
+.latter {
+  color: #333;
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 2em; 
+  font-weight: bold;
+}
+
+
+.section-form {
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px 50px; 
+  margin: 10px;
+  border-radius: 12px;
+  border: 2px solid #ffd700;
+  width: 100%;
+  animation: slideIn 1s ease;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-form {
+    padding: 20px; 
+    margin: 0 auto; 
+  }
+
+  .contact-img {
+    padding: 20px 0; 
+  }
+
+  .main-heading {
+    font-size: 1.5em; 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .book-table-heading {
+    font-size: 18px; 
+  }
+
+  .main-heading {
+    font-size: 1.2em;
+  }
+
+  .section-form {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px; 
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+}
+
+
+label {
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #333;
+  display: block;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #555;
+}
+
+
+button {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  color: #ffd700;
+}
+
+
+.form-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.5s ease; 
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}

@@ -1,0 +1,148 @@
+.forbackground {
+  background-image: linear-gradient(135deg, #bfe9ff, #cfdb62);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-us-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out; 
+}
+
+.history-section,
+.vision-goals-section,
+.extra-section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.vision-content,
+.mission-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.vision-image,
+.mission-image {
+  padding-left: 50px;
+  max-width: 100%; 
+  height: auto;
+  box-shadow: 0 0 10px #333;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .vision,
+  .mission {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision-content,
+  .mission-content,
+  .vision-image,
+  .mission-image {
+    padding: 0;
+    text-align: center;
+  }
+
+  .vision-image img,
+  .mission-image img {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    box-shadow: none; 
+  }
+
+  .vision-para,
+  .mission-para {
+    max-width: none; 
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .vision,
+  .mission {
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+  }
+
+  .vision-content,
+  .mission-content,
+  .vision-image,
+  .mission-image {
+    padding: 0;
+    text-align: center;
+  }
+
+  .vision-image img,
+  .mission-image img {
+    width: 100%;
+    height: auto;
+    padding-left: 0; /* Remove the padding */
+    box-shadow: none; /* Optional: Remove the box shadow for smaller screens */
+  }
+
+  .vision-para,
+  .mission-para {
+    max-width: none; /* Remove max-width for better responsiveness */
+  }
+}
